@@ -18,7 +18,9 @@ function click1(){
     }
     else{
         p1.innerHTML = "time finished"
+        p1.style.visibility = "hidden"
         time1active = false
+        
     }
    }
     updatetime()
@@ -29,7 +31,7 @@ function click2(){
     if(time1active || time2active){
         return
     }
-    
+    time2active= true
     var p2= document.getElementById("2")
     p2.style.visibility = "visible"
     var time1 = 120
@@ -41,8 +43,11 @@ function click2(){
             
         }
         else{
-            p1.innerHTML = "time finished"
+            p2.innerHTML = "time finished"
+            p2.style.visibility = "hidden"
             time2active = false
+           
+
         }
     }
     updatetime1()
