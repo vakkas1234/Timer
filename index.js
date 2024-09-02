@@ -13,12 +13,12 @@ function click1(){
    function updatetime(){
     if(time > 0 ){
         time--
-        p1.innerHTML = time
+        p1.innerHTML = time + "sn"
         setTimeout(updatetime,1000)
     }
     else{
-        p1.innerHTML = "time finished"
-        p1.style.visibility = "hidden"
+       alert("time finished")
+       p1.style.visibility = "hidden"
         time1active = false
         
     }
@@ -38,13 +38,13 @@ function click2(){
     function updatetime1(){
         if(time1> 0){
             time1--
-            p2.innerHTML = time1
+            p2.innerHTML = time1 + "sn"
             setTimeout(updatetime1,1000)
             
         }
         else{
-            p2.innerHTML = "time finished"
-            p2.style.visibility = "hidden"
+            alert("time finished")
+               p2.style.visibility = "hidden"
             time2active = false
            
 
